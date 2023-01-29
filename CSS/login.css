@@ -1,0 +1,41 @@
+.login{
+    padding-top: 150px;
+}
+
+.login .login-container{
+    border-top: 30px #EDEDE9 solid;  
+    /* outline: auto; */
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0px 70px rgba(0, 0, 0, .1);
+}
+
+.signInAcct, .signInPassword{
+    width: 200px;
+    margin: 0px 50px;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.login-container .send2{
+    width: 200px;
+    padding: 10px 0;
+    margin: 0 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(232, 220, 197);
+    cursor: pointer;
+}
+.login-container h5{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: grey;
+}
+.login-container a{
+    text-decoration: none   ;
+}

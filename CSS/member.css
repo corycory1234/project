@@ -1,0 +1,42 @@
+.member{
+    padding-top: 150px;
+}
+
+.member .member-container{
+    border-top: 30px #EDEDE9 solid;  
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0px 70px rgba(0, 0, 0, .1);
+}
+
+.account, .password{
+    width: 200px;
+    margin: 0px 50px;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.member-container .send{
+    width: 200px;
+    padding: 10px 0;
+    margin: 0 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(232, 220, 197);
+    cursor: pointer;
+}
+.member-container h5{
+    text-align: left;
+    margin-top: 0;
+    margin-left: 40px;
+    color: grey;
+}
+.member-container a{
+    display: block;
+    text-decoration: none;
+    width: 100px;
+}

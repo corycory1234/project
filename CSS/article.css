@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html, body{
+    height: 100%;
+}
+/**************** NAV滾動 **************/
+.nav-scroll{
+    background-color: transparent;
+}
+
+.nav-container{
+    /* margin: auto; */
+    background-color: #EDEDE9;
+    /* position:sticky; */
+    /* top: 0; */
+    /* z-index: 100; */
+
+}
+
+/***************** NAV導覽列 ********************/
+.nav-container .nav{
+    /* max-width: 1200px; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    background-color: #EDEDE9;
+
+    
+}
+.nav .logo{
+    width: 100px;
+    /* outline: auto; */
+}
+.nav .logo img{
+    width: 100%;
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+.nav-link .nav-a{
+    margin: auto;
+    /*原本inline屬性的a標籤, 會被flex取代, 這樣文字就可以漂浮動畫，*/
+    display: flex;
+}
+.nav-link .nav-a a{
+    text-decoration: none;
+    padding: 0 30px 0 30px;
+    color: black;
+    display: block;
+    position: relative;
+    transform: translateY(0px);
+    transition: .5s; 
+}
+.nav .search{
+    display: flex;
+}
+.nav .search input,
+.nav .search button{
+    /* border: none; */
+    padding: 5px 10px;
+}
+.nav .search input:focus,
+.nav .search button:focus{
+    outline: none;
+}
+.nav .search button{
+    border-radius: 0 200px 200px 0;
+}
+.nav .search input{
+    border-radius: 200px 0 0 200px;
+}
+
+.fa-user, .fa-cart-shopping{
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.nav .search a:visited{
+    color: black;
+}
+
+
+
+
+/******************* NAV動畫 *****************/
+.nav-a a:hover{
+    color:coral;
+    font-weight: bold;
+    transition: .5s;
+    transform: translateY(-10px);
+}
+.nav-a a:after{
+    content:"";
+    position: absolute;
+    /*放50%, 就可以看不到border-bottom*/
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0;  
+    border-bottom: 1px solid coral;
+    transition-duration: 0.5s;
+}
+.nav-a a:hover:after{
+    left: 0%;
+    right:0%;
+}
+
+/********************* 最新消息 ************************/
+#news1 > img{
+    width: 100%;
+    padding-top: 50px;  
+    position: fixed;
+}
+.news{
+    /* outline: auto; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100vh; 
+}
+.news-wrapper{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+.news-wrapper .news-pic{
+    /* outline: auto; */
+    width: 50%;
+    margin: left;
+    margin-top: 150px;
+    border-radius: 5px;
+
+}
+.news-wrapper .news-pic img{
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 60px;
+    margin-left: 100px;
+}
+.news-txt{
+    margin-top: 210px;
+    margin-left: 150px;
+    width: 50%;
+    line-height: 1.6rem;
+    font-weight: bold;
+}
+
+/* .crab{
+    height: 60%;
+} */
+
+
+/**************** FOOTER **************/
+.footer-container{
+    background-color: #d6ccc2;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+.footer .logo{
+    width: 100px;
+    flex-shrink: 0;
+    margin-left: 0;
+    padding: 20px;
+}
+.footer .logo img{
+    width: 100%;
+}
+.footer ul{
+    width: 100%;
+    /* outline: auto; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+.footer ul li{
+    font-size: 28px;
+    margin-left: 20px;
+
+}
+.footer .footer-txt{
+    width: 100%;
+    display: flex;
+    margin-left: 150px;
+    align-items: center;
+    white-space: nowrap;
+    /* outline: auto; */
+}
