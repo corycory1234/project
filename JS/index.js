@@ -40,21 +40,33 @@ let s = skrollr.init();
 
 
 // ------------------------ 按讚 -------------------------- //
-let number = 0
+// let number = 0
 
-function click(number_var){
-  number = number + number_var
-  $(".thumb_number").text(number);
-}
+// function click(number_var){
+//   number = number + number_var
+//   $(".thumb_number").text(number);
+// }
 
-$(".fa-thumbs-up").click(
-    function(){
-      click(1);
-      }
-  )
+// $(".fa-thumbs-up").click(
+//     function(){
+//       click(1);
+//       }
+//   )
 
+let news = [
+    {title: "", likes: 0},
+    {title: "", likes: 0},
+    {title: "", likes: 0},
+    {title: "", likes: 0},
+    {title: "", likes: 0},
+    {title: "", likes: 0},
 
+  ];
 
+  function likeNews(index) {
+    news[index].likes += 1;
+    document.getElementById("news" + index).innerHTML = news[index].title +  news[index].likes ;
+  }
 
 
 

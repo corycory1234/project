@@ -172,6 +172,9 @@ html, body{
     margin-right: 210px;
     white-space:nowrap ;
 }
+.mindset-txt h1:nth-child(2){
+    font-size: 46px;
+}
 
 .mindset-pic img:hover{
     transform: scale(1.1);
@@ -199,7 +202,7 @@ html, body{
     text-align: center;
 }
 .carousel{
-    outline: 5px solid BLACK;
+    /* outline: 5px solid BLACK; */
     height: 100vh;
     background-image: url(../img/MINDSET/pineapple-bg.jpg);
     background-position: center center;
@@ -436,10 +439,16 @@ html, body{
     /* position: absolute;
     top:165px;
     left:211px; */
-    /* display: flex; */
+    display: flex;
     cursor: pointer;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 }
 .thumb .fa-thumbs-up{
+    /* outline: auto; */
+    margin-left: -90px;
 
 }
 .news-txt .fa-thumbs-up:hover{
