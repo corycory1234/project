@@ -25,7 +25,7 @@
                         <a href="article.html">最新消息</a>
                         <a href="#product">服務項目</a>
                         <a href="#store">門市資訊</a>
-                        <a href="#comment">留言版</a>
+                        <a href="#comment">聯絡我們</a>
                     </div>
             </div>
             <form action="" class="search">
@@ -271,10 +271,10 @@
 
 
         <div class="store-item">
-            <div class="store-pic" data-bottom-top="transform: translateX(-100px); opacity: 0" data-center="transform: translateX(0px); opacity: 1">
+            <div class="store-pic" data-bottom-top="transform: translateX(-200px); opacity: 0" data-center="transform: translateX(0px); opacity: 1">
                 <img src="./img/STORE/restaurant_on_pier.jpg" alt="">
             </div>
-            <div class="store-txt" data-bottom-top="transform: translateX(20px); opacity: 0" data-center="transform: translateX(0px); opacity: 1">
+            <div class="store-txt" data-bottom-top="transform: translateX(100px); opacity: 0" data-center="transform: translateX(0px); opacity: 1">
                 <h2>門市資訊</h2>
                 <p>桃園市中壢區111號1樓</p>
             </div>
@@ -286,14 +286,18 @@
 
 
 <!-------------------- 留言板 --------------------->
-<section id="comment">
+<!-- <section id="comment">
     <div class="board">
-        <h1 class="comment">留言版  </h1>
+        <h1 class="comment">聯絡我們</h1>
+        <div class="comment-pic">
+            <img src="./img/contact us/contact.jpg" alt="">
+        </div>
+        
        
         <div class="board-container">
             <div class="board-container-txt">
                 <h3>標題：</h3>
-                <h3>暱稱：</h3>
+                <h3>暱稱：</h3> 
                 <h3>內容：</h3>
             </div>
             <input type="text" placeholder="請輸入標題" id="title">
@@ -310,7 +314,72 @@
             </div>
         </div>
     </div>
+    </section> -->
+
+
+    <section id="comment">
+    
+    <div class="contact-container">
+
+        <div class="row header">
+          <h1>聯絡我們 &nbsp;</h1>
+          <h3>請填寫以下資訊, 敝司盡快與您聯繫!</h3>
+        </div>
+        <div class="row body">
+          <form action="#">
+            <ul>
+              
+              <li>
+                <p class="left">
+                  <label for="first_name">姓名</label>
+                  <input type="text" name="first_name" placeholder="請填入姓名" />
+                </p>
+                <p class="pull-right">
+                  <label for="last_name">電話</label>
+                  <input type="text" name="last_name" placeholder="09XX-XXX-OOO" />      
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <label for="email">email <span class="req">*</span></label>
+                  <input type="email" name="email" placeholder="OOXX@gmail.com" />
+                </p>
+              </li>        
+              <li><div class="divider"></div></li>
+              <li>
+                <label for="comments">請留言</label>
+                <textarea cols="46" rows="3" name="comments"></textarea>
+              </li>
+              
+              <li>
+                <input class="btn2 btn2-submit" type="submit" value="Submit" />
+                <!-- <small>or press <strong>enter</strong></small> -->
+              </li>
+              
+            </ul>
+          </form>  
+        </div>
+      </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -461,9 +530,6 @@
     
     
     
-
-
-
 
 
 
