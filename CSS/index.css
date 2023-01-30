@@ -173,7 +173,7 @@ html, body{
     white-space:nowrap ;
 }
 .mindset-txt h1:nth-child(2){
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .mindset-pic img:hover{
@@ -228,7 +228,7 @@ html, body{
     display: inline-block;
     font-size: 36px;
     margin-left: 200px;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 .aboutUs .title h1{ 
 }
@@ -238,7 +238,7 @@ html, body{
     background-color: #ccc;
     /* 多重寫法；漸層(115斜角)中間 中間/寬100% 高100% ,
     url(圖片網址) 靠右 中間/寬auto 高auto */
-    background: linear-gradient(115deg, #7bf 50%, transparent 50%) center center / 100% 100%,
+    background: linear-gradient(115deg, #F5EBE0 50%, transparent 50%) center center / 100% 100%,
                 url("../img/couple.jpg") 
                 right center / auto auto;
 
@@ -256,10 +256,11 @@ html, body{
     justify-content: center;
     /*讓border底線不撐到滿版, 只對齊文字長度*/
     align-items: flex-start;
+    margin-left: -50px;
 }
-.aboutUs-Txt h1{
+.aboutUs-Txt h2{
     /* display: block; */
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 
@@ -535,7 +536,7 @@ html, body{
 }
 .board{
     height: 100%;
-    background-image: linear-gradient(-30deg,#bdbdb5,#bcbcb8,#EDEDE9);
+    background-image: linear-gradient(-30deg,#bdbdb5,#dcdcca,#EDEDE9);
 }
 
 .board-container{
@@ -579,12 +580,12 @@ textarea{
 }
 
 
-/********************* 商品列表 ************************/
+/********************* 服務項目 ************************/
 #section{
     height: 100vh;
 }
 .product .title{
-    margin-left: 590px;
+    margin-left: 660px;
    padding-top: 20px;
    font-size: 24px;
 }
